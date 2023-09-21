@@ -1,0 +1,34 @@
+/* Center the table horizontally */
+.Fetch-table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-psd/abstract-background-design_1297-82.jpg?w=1060&t=st=1695230446~exp=1695231046~hmac=825238a35e518c8eec263c99f2c11b1a8f01622f0996ba2bacd4a852e9068f04);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  }
+  
+  /* Style the table */
+  table {
+    border-collapse: collapse;
+    width: 97%; /* Adjust the width as needed */
+    margin: 20px; /* Add some margin for spacing */
+  }
+  
+  th, td {
+    border: 6px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: white;
+  }
+  
+  caption {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make it bold */
+    margin-bottom: 50px;
+    text-align: center; /* Add space between heading and table */
+    color: white;
+  }
+  

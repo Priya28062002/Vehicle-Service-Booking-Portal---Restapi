@@ -1,0 +1,70 @@
+/* CSS for Excel-like table */
+.History-table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    border: 10px solid red;
+    position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background: #1b1b32;
+	background-image: url('https://img.freepik.com/free-vector/simple-blank-red-background-business_53876-120509.jpg?w=1060&t=st=1693892911~exp=1693893511~hmac=4d21793ebd2b146027e282c276fcbaadbf6822e278dd2a5161fc5770b4a4bb4a');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  }
+  
+  .History-excel-table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width as needed */
+    text-align: center; /* Center-align table content */
+  }
+  
+  .History-excel-table th,
+  .History-excel-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    color: black;
+  }
+  
+  .History-excel-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Optional: Add hover effect to rows */
+  .History-excel-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Center-align the title */
+  .History-table-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+ /* Add styling for each history item column */
+.History-history-item {
+    margin: 10px auto; /* Adjust spacing between columns and center horizontally */
+    border: 1px solid red;
+    padding: 10px;
+    width: 250px; /* Adjust the width of each column as needed */
+    text-align: center; /* Center-align the content */
+  }
+  
+  /* Center-align the content within each history item */
+  .History-history-item table {
+    margin: 0 auto;
+  }
+  .History-centered-cell {
+    text-align: center;
+  }  
+
+  .History-span{
+    color: red;
+  }

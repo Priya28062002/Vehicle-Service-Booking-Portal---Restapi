@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.Landingpage-body {
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+
+.Landingpage-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: white;
+    animation: Landingpage-header 2s ease-in-out; /* Corrected keyframe name */
+}
+
+@keyframes Landingpage-header { /* Corrected keyframe name */
+    0% {
+        transform: translateY(-100%);
+    }
+}
+
+.Landingpage-nav li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 600;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+.Landingpage-content {
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    color: white;
+    overflow: hidden;
+    animation: Landingpage-content 2s ease-in-out; /* Corrected keyframe name */
+}
+
+@keyframes Landingpage-content { /* Corrected keyframe name */
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+.Landingpage-content h1 {
+    font-size: 80px;
+    margin-bottom: 1%;
+    letter-spacing: 8px;
+}
+
+.Landingpage-content h3 {
+    font-size: 15px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Landingpage-span {
+    color: yellow;
+}
+
+.Landingpage-content p {
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Landingpage-button {
+    padding: 15px 30px;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.Landingpage-button:hover {
+    background: rgb(243, 74, 74);
+}
+
+.Landingpage-image {
+    width: 50%;
+    margin-top: 8%;
+    z-index: -1;
+}
+
+.Landingpage-img {
+    width: 40rem;
+    animation: Landingpage-car 5s ease-in-out; /* Corrected keyframe name */
+}
+
+@keyframes Landingpage-car { /* Corrected keyframe name */
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(-220%);/* Adjust translateY value to move the car higher */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Landingpage-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Landingpage-content h1 {
+        margin-bottom: 5%;
+    }
+
+    .Landingpage-content h3 {
+        margin-bottom: 5%;
+    }
+
+    .Landingpage-content p {
+        margin-bottom: 5%;
+    }
+
+    .Landingpage-image {
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Landingpage-img {
+        width: 320rem;
+    }
+}
